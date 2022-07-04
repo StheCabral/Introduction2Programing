@@ -16,5 +16,6 @@ if (a > b):
     temp = a
     a = b
     b = temp
-
-print( "Os valores foram trocados:" + str(a) + srt(b) )
+    print( "Os valores foram trocados: " + str(a) + ", " + str(b) )
+else:
+    print("Os valores continuaram os mesmos "  + str(a) + ", " + str(b) )

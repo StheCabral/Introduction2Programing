@@ -19,10 +19,21 @@ imprima y
 
 ### Variável
 Espaço de memória que armazena valores, nomes significativos e que respeitem as regras (em python é legal fazer tudo minúsculo, dividir as palavras com - e não usar números no começo)
+
 ### Tipo
 Um conjunto de valores equipado com um cojunto de operações ex.: string(", a, b, c, +), integer(1, 2, 3, -, *) etc
 * Fortemente tipado
 * Fracamente tipado
+
+### Expressões
+* **Ordem de precedência**: ordem de prioridade quanto as operações numéricas a serem realizadas, podemos sobrescrever a ordem natural de precedência usando paranteses
+* **Numéricas**: - + * / %  
+* **Lógicas**: == =! >= <=
+ 
+### Estruturas de Controle
+* **Sequência**: comandos excecutados um após o outro
+* **Seleção**: escolhe entre dois possíveis caminhos
+*  **Repetição**: executar a mesma operação várias vezes
 
 
 ***
@@ -43,6 +54,5 @@ Aqueles que já vem na linguagem
 ### Manipulação de strings
 * \n : em strings, quebra a linha
 * \t : em strings, dá um espaço grande
-*  \' : em strings, permite que as aspas apareçam sem encerrar a mensagem
-*   + : concatena, tudo no argumenta precisa ser string
-*   
+* \\' : em strings, permite que as aspas apareçam sem encerrar a mensagem
+* \+ : concatena, tudo no argumenta precisa ser string

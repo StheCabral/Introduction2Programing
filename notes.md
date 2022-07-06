@@ -56,3 +56,11 @@ Aqueles que já vem na linguagem
 * \t : em strings, dá um espaço grande
 * \\' : em strings, permite que as aspas apareçam sem encerrar a mensagem
 * \+ : concatena, tudo no argumenta precisa ser string
+
+# Cheat sheet
+
+### Placeholder em python
+```
+name = "Marcos"
+print(f"Oi, {name}")
+```

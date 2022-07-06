@@ -1,3 +1,4 @@
+# Sequência que receba dois números de mostre eles em ordem crescente
 numero1 = int(input("Digite o primeiro número: "))
 numero2 = int(input("Digite o segundo número: "))
 
@@ -7,7 +8,10 @@ else:
      print(numero2, numero1)
      
   
-######
+######################
+
+#Sequência que receba dois números e troque eles de variável caso a seja maior que b
+
 a = int(input("Digite um número: "))
 b = int(input("Digite um número: "))
 temp = 0

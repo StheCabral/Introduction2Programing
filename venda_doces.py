@@ -9,7 +9,9 @@ total = qtd_pm + qtd_maca + qtd_cd
 fat_pedemoleque = qtd_pm * 2
 fat_cocada = qtd_cd * 5
 fat_maca = qtd_maca * 3
-fat_referencia = 0
+fat_referencia = fat_pedemoleque
+melhor_doce = pedemoleque
+qtd_referencia = qtd_pm
 
 if (total == 0):
     print("A ideia foi peba! Acho melhor encontrar um novo jeito de ganhar dinheiro...")
@@ -21,11 +23,7 @@ else:
 
     elif (fat_cocada == fat_referencia):
 
-        if (qtd_pm > qtd_cd):
-            fat_referencia = fat_pedemoleque
-            melhor_doce = pedemoleque
-            qtd_referencia = qtd_pm
-        else: 
+        if (qtd_cd > qtd_pm):
             fat_referencia = fat_cocada
             melhor_doce = cocada
             qtd_referencia = qtd_cd

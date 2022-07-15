@@ -28,7 +28,7 @@ else:
         st_score = score1
         nd_place = name2
         nd_score = score2
-    else:
+    elif (name2 < name1):
         st_place = name2
         st_score = score2
         nd_place = name1
@@ -51,18 +51,29 @@ if (score3 < nd_score):
                 nd_score = st_place
                 st_place = name3
                 st_score = score3
+            elif (st_place < name3):
+                nd_place = name3
+                nd_score = score3
 elif (score3 > nd_score):
     rd_place = name3
     rd_score = score3
-else:
+elif (score3 == nd_score):
     if(name3 < nd_place):
          rd_place = nd_place
-         rd_score = nd_score
-         nd_place = name3
-         nd_score = score3    
-    else:
+         rd_score = nd_score   
+         if (score3 <= st_score and name3 < st_place):
+             nd_place = st_place
+             nd_score = st_score
+             st_place = name3
+             st_score = score3
+         else:
+             nd_place = name3
+             nd_score = score3
+    elif (nd_place < name3):
         rd_place = name3
         rd_score = score3
+
+
 
 print(f"{st_place} {st_score}")
 print(f"{nd_place} {nd_score}")

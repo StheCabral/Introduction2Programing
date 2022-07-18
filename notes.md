@@ -37,7 +37,7 @@ Um conjunto de valores equipado com um cojunto de operações ex.: string(", a, 
 
 
 ***
-# Aula 3 
+# Aula 3 - Tipos Primitivos
 ## Tipos Primitivos em Python
 Aqueles que já vem na linguagem
 * Tipos Estáticos: define em tempo de compilação, aquela variável só pode armazenar esse tipo
@@ -56,6 +56,60 @@ Aqueles que já vem na linguagem
 * \t : em strings, dá um espaço grande
 * \\' : em strings, permite que as aspas apareçam sem encerrar a mensagem
 * \+ : concatena, tudo no argumenta precisa ser string
+
+***
+# Aula 5 - Laços de Repetição
+
+## While
+Enquanto certa condição for verdade o bloco de código dentro do `while` será executada
+
+* depois dele pode vir um `else`que executará o bloco de código dentro dele caso a condição seja falsa, como se fosse uma "última execução" que acontecerá quando finalmente a condição for falsa
+
+### Exemplo
+```
+while (true):
+ print("Está condiço é verdade")
+else:
+ print("Está condição é falsa")
+```
+### Exemplo
+```
+Código que execute uma operação de multiplicação a partir de múltiplas somas
+
+op1 = int(input("Digite o primeiro fator: "))
+op2 = int(input("Digite o segundo fator: "))
+
+while (op2 > 0): 
+ resultador += op1
+ op2 -= 1
+else:
+ print(f"O resultado foi {resultado}")
+```
+## Range
+* Conhecimento de Listas Necessário
+
+Função criada para gerar listas, parametros:
+* start: onde começa, default é 0 - opcional
+* stop: onde termina - obrigatório
+* step: de quanto em quanto, default é 1 - opcional
+
+### Exemplo
+```
+list(range(2,5,1))
+
+resulta em: [2, 3, 4]
+```
+
+## for
+
+Laço de repetição com número de repetições definidas
+
+```
+for i in range(start, stop, step):
+ print(i)
+```
+
+
 
 # Cheat sheet
 

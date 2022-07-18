@@ -100,16 +100,39 @@ list(range(2,5,1))
 resulta em: [2, 3, 4]
 ```
 
-## for
+## For
 
 Laço de repetição com número de repetições definidas
+* Também aceita aquele mesmo `else` do while
 
 ```
 for i in range(start, stop, step):
  print(i)
 ```
+### Comando `for` com dois índices
+Esse código vai gerar multiplicações entre os elementos dos pares ordenados
+```
+for i, j in [(1,5). (2, 6), (3,7)]
+ print(i * j)
+else:
+ print("fim")
+```
+### Comando `zip` para gerar tuplas
+```
+               x         y
+ij = zip(range(1,4), range(5, 8))
+list(ij)
+```
+esse código vai gerar uma tupla cujo primeiro elemento do par ordenado varia de 1 a 4, e o segundo elemento varia de 5 a 8, gerando a seguinte sequência:
+[(1,5), (2,6 ), (3,7)]
 
-
+### Outras formas de fazer
+```
+for i, j in zip([1,2, 3], [5,6,7])
+ print(i * j)
+else:
+ print("fim")
+```
 
 # Cheat sheet
 

@@ -3,7 +3,8 @@ good_jokes = 0
 inputs = "none"
 while (inputs != "Fim do Show!"):
     inputs = input()
-    total_inputs += 1
+    if (inputs != "Fim do Show!"):
+        total_inputs += 1
     if (inputs == "BAZINGA!"):
         good_jokes +=1
 

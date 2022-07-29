@@ -1,30 +1,20 @@
-previous_call = "none"
-
-while (call != "Boa noite"):
-    call = input()
-    if (previous_call == "toc-toc-toc" and call == "Penny"):
-        i +=1
-        print(i)
-    elif (call =! "toc-toc-toc" and call!= "Penny"):
-        print("Não pode entrar, se identifique!!!")
-
-else:
-    print("Boa noite Penny")
-    
-####################################################
+contador = 0
 line = None
 while (line != "Boa noite"):
-    for i in range (1, 7):
         line = input()
-        if (line == "toc-toc-toc"):
-            previous_line = line
-        elif (previous_line == "toc-toc-toc" and line == "Penny"):
-            print(i/2)
-            previous_line = None
-        elif (line != "toc-toc-toc" and line != "Penny" and line != "Boa noite"): 
-            i = 1
-            print("Não pode entrar, se identifique!!!") 
-    else: 
-       print("Pode entrar Sheldon")    
+        if (line == "toc-toc-toc" or line == "Penny" or line == "Boa noite"): 
+            if (line == "toc-toc-toc"):
+                previous_line = line
+            elif (line == "Penny"):
+                if (previous_line == "toc-toc-toc"):
+                    contador += 1
+                    print(contador)
+                    previous_line = None
+                if (contador == 3):
+                    print("Pode entrar Sheldon")
+                    contador = 0
+        else:   
+            contador = 0 
+            print("Não pode entrar, se identifique!!!")  
 else:
     print("Boa noite Penny")

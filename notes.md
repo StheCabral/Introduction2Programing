@@ -133,6 +133,27 @@ for i, j in zip([1,2, 3], [5,6,7])
 else:
  print("fim")
 ```
+# Aula 6- Listas
+Estruturas feitas para guardar dados em cadeia
+## Funções
+* len(lista): retorna o tamanho da lista
+* Pode ser percorrida pelo `for`
+* lista.append(elemento)
+* `lista.index(elemento)`: retorna o índice daquele elemento na lista
+ *  também podemos usar `lista.index(elemento, x)` em que x é o índice de partido
+* `lista.sort()` : ordena a lista em ordem crescente
+  * `lista.sort(reverse = True)` : ordena na ordem descrescente
+## Acessar por índices:
+ `lista[0]` : primeiro elemento da lista
+ `lista[-1]`: último elemento da lista (se tem 4 elementos, começaria no -4 por exemplo)
+ ### Slicing
+ Para acessar uma região da lista
+ `lista[início:fim]`
+ ex.:
+ `lista[0:2]` Pega os elementos de índice 0 a 2
+ `lista[:3]`  Admite que começa do 0 até o 3
+ `lista[3:]`  Pega todos os elementos a partir do 3
+
 
 # Cheat sheet
 
@@ -141,3 +162,4 @@ else:
 name = "Marcos"
 print(f"Oi, {name}")
 ```
+

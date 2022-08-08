@@ -143,6 +143,18 @@ Estruturas feitas para guardar dados em cadeia
  *  também podemos usar `lista.index(elemento, x)` em que x é o índice de partido
 * `lista.sort()` : ordena a lista em ordem crescente
   * `lista.sort(reverse = True)` : ordena na ordem descrescente
+* `sorted(lista)`: retorna outra lista ordenada sem modificar a original
+* `lista.insert(index, valor)`: adiciona valor na posição index
+* `lista.remove(valor)`: remove a primeira ocorrência de valor
+* `lista.pop(index)`: remove o elemento de posição index da lista e retorna o valor removido (numa variável)
+* `lista.replace(replaced, replacer)`: troca o valor replaced por um valor replacer
+* 
+* É possível concatenar listas ex.:
+```
+lista1 = [1, 2]
+lista2 = [3, 4]
+lista1 + lista2 = [1, 2, 3, 4]
+```
 ## Acessar por índices:
  `lista[0]` : primeiro elemento da lista
  `lista[-1]`: último elemento da lista (se tem 4 elementos, começaria no -4 por exemplo)

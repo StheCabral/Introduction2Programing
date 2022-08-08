@@ -136,9 +136,9 @@ else:
 # Aula 6- Listas
 Estruturas feitas para guardar dados em cadeia
 ## Funções
-* len(lista): retorna o tamanho da lista
+* `len(lista)`: retorna o tamanho da lista
 * Pode ser percorrida pelo `for`
-* lista.append(elemento)
+* `lista.append(elemento)`: adiciona um elemento no final da lista
 * `lista.index(elemento)`: retorna o índice daquele elemento na lista
  *  também podemos usar `lista.index(elemento, x)` em que x é o índice de partido
 * `lista.sort()` : ordena a lista em ordem crescente
@@ -148,7 +148,6 @@ Estruturas feitas para guardar dados em cadeia
 * `lista.remove(valor)`: remove a primeira ocorrência de valor
 * `lista.pop(index)`: remove o elemento de posição index da lista e retorna o valor removido (numa variável)
 * `lista.replace(replaced, replacer)`: troca o valor replaced por um valor replacer
-* 
 * É possível concatenar listas ex.:
 ```
 lista1 = [1, 2]

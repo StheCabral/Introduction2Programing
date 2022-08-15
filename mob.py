@@ -51,7 +51,7 @@ if (lost_score > 0):
     print(f"A maldição do sapo fez o Vascão perder {lost_score} pontos. Um número preocupante, que pode fazer diferença.")
 elif ( lost_score == 0):
     print("A maldição parece que não teve impacto relevante! Não houve nenhuma perda de pontos.")
-if (total == 21):
+if (total >= 21):
     print(f"Na reta final do campeonato, o Vasco garantiu um total de {total} pontos, com {victories} vitórias, {draws} empates e {defeats} derrotas, e alcançou o tão esperado acesso. O Clube do Fomento Corporal vibra num SJ lotado!")
 elif (total < 21):
     print(f"Na reta final do campeonato, o Vasco fez somente {total} pontos, com {victories} vitórias, {draws} empates e {defeats} derrotas, e não conseguiu o acesso. Mais um ano de série B e sofrimento. Mob, o clube e a torcida estão completamente desolados.")

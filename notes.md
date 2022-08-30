@@ -167,7 +167,7 @@ lista1 + lista2 = [1, 2, 3, 4]
  
  # Aula 7 - Listas
  
- * `char(x)`: retorna o caractere que representa o numero x na tabela ascii
+ * `chr(x)`: retorna o caractere que representa o numero x na tabela ascii
  * `ord("x")`: retorna o numero que representa o caractere x na tabela ascii
 
 

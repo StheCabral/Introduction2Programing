@@ -164,6 +164,11 @@ lista1 + lista2 = [1, 2, 3, 4]
  `lista[0:2]` Pega os elementos de índice 0 a 2
  `lista[:3]`  Admite que começa do 0 até o 3
  `lista[3:]`  Pega todos os elementos a partir do 3
+ 
+ # Aula 7 - Listas
+ 
+ * `char(x)`: retorna o caractere que representa o numero x na tabela ascii
+ * `ord("x")`: retorna o numero que representa o caractere x na tabela ascii
 
 
 # Cheat sheet

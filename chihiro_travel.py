@@ -10,11 +10,15 @@ def foot_massage():
     return tip
 
 def meal():
-    if (total_tip % 10 == 0):
+    tip = 0
+    if ((total_tip % 10) == 0):
         tip = 5
     else:
-        while (total_tip % 10 != 0):
-            tip = 1
+        tip = 0
+        total_tip_aux = total_tip
+        while ((total_tip_aux % 10) != 0):
+            total_tip_aux += 1
+        tip = total_tip_aux - total_tip
     return tip
 
 def complete_massage():
@@ -28,7 +32,7 @@ def complete_massage():
 time = 120
 total_tip = 10
 services = ['pedras', 'pes', 'refeicao', 'completa']
-while (total_tip < 50 or time > 0):
+while total_tip < 50 and time > 0:
     service = input()
     if (service not in services):
         time -= 5
@@ -53,11 +57,10 @@ while (total_tip < 50 or time > 0):
             service_name = "Massagem Completa"
             tip = complete_massage()
             total_tip += tip
-            time -= 60
+            time -= 50
         print(f"Voce concluiu o servico de {service_name} e agora possui {total_tip} gorjetas.")
 else:
     if (total_tip >= 50):
         print(f"Você acumulou {total_tip} gorjetas, com essa quantidade voce conseguira comprar sua passagem de saida e salvar seus pais.")
     else:
         print("Voce nao conseguiu o minimo necessario para comprar a passagem de saida desse mundo e salvar seus pais.")
-

@@ -165,12 +165,25 @@ lista1 + lista2 = [1, 2, 3, 4]
  `lista[:3]`  Admite que começa do 0 até o 3
  `lista[3:]`  Pega todos os elementos a partir do 3
  
- # Aula 7 - Listas
- 
  * `chr(x)`: retorna o caractere que representa o numero x na tabela ascii
  * `ord("x")`: retorna o numero que representa o caractere x na tabela ascii
 
+ # Aula 7 - Recursão
+ 
+ A capacidade que uma função tem de ser definida em termos de si própria, para ocorrer ela chama ela mesma em sequência
+ Existem algoritmos inerentemente recursivos como um produto fatorial ou a sequência de fibonacci
 
+### Estrutura da função recursiva
+Dividimos a função em pelo menos duas partes:
+1. Caso base
+Aqui não temos recursão ainda, é mais cru
+2. Passo indutivo
+Chama o caso base para acontecer
+
+* Recursão é útil para manipular alguma estruturas de dados como pilhas, árvores e listas ligadas
+
+
+***
 # Cheat sheet
 
 ### Placeholder em python

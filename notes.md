@@ -182,6 +182,37 @@ Chama o caso base para acontecer
 
 * Recursão é útil para manipular alguma estruturas de dados como pilhas, árvores e listas ligadas
 
+# Aula 8 - Tuplas e Dicionários
+
+## Tuplas
+São formas estruturadas de armazenar dados
+* São estáticas, não se modificam
+* Definição: `tupla1 = ("oi", "exemplo")`
+* É possível iterar usando `for`, também funciona `len()`
+* tupla de um elemnto: `tupla_unitaria = (2,)`
+
+## Dicionários
+Permite armazenar uma coleção de valores e qualifica eles através de chaves, permitindo que eles sejam acessados através desses valores
+ ```
+ meu_dicionario = {'nome': '''sthe''', 'idade': '''19 anos'''}
+ print(meu_dicionario['nome'])
+ ```
+ * Pode adicionar elementos assim: `meu_dicionario['fone'] = 88888-8888` estamos criando uma chave se ela não existir ou atualizando
+ * `meu_dicionario.update({'fone': '88888-8888'`}): o update pode adicionar ou modificar vários valores ao mesmo tempo
+ * `del meu_dicionario['idade']`: remove um campo
+ * `.pop` também funciona aqui `idade = meu_dicionario.pop('idade)`
+ ### Comandos Básicos 
+ * `len(dicionário)`: numero de campos armazenados
+ * `dicionario.keys()`: retorna as chaves
+ * `dicionario.values()`: retorna os valores
+ * `dicionario.items ()`: retorna os pares chave-valor
+
+### Iteração
+```
+for valor in dicionario.values()
+for chave, valor in dicionario.items()
+for chave in dicionarios.keys()
+```
 
 ***
 # Cheat sheet

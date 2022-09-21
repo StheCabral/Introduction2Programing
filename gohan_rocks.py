@@ -4,6 +4,7 @@ piccolo = [int(x) for x in input().split(" ")]
 gohan_win = 0
 piccolo_dict = {}
 gohan_dict = {}
+keyerror = False
 for number in piccolo:
     if (number not in piccolo_dict.keys()):
         piccolo_dict.update({number : 1})
@@ -20,7 +21,8 @@ for key in piccolo_dict.keys():
         if (piccolo_dict[key] == gohan_dict[key]):
             gohan_win += 1
     except KeyError:
-        print("Ih, nao foi agora, Gohan! Vamos tentar de novo semana que vem.")
-
+        keyerror = True
 if (gohan_win == len(piccolo_dict)):
     print("Dale Gohan!")
+elif (gohan_win != len(piccolo_dict or keyerror)):
+    print("Ih, nao foi agora, Gohan! Vamos tentar de novo semana que vem.")

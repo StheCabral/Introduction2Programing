@@ -74,5 +74,4 @@ while (open):
         if (most_ordered_name == 'hamburguer de siri'):
             print('O bom e tradicional hambúrguer de siri, líder em vendas, nunca será superado!')
         else:
-            print(f'{most_ordered_name} está fazendo sucesso entre os clientes, ultrapassando até mesmo o lendário hambúrguer de siri.')
-
+            print(f'{most_ordered_name.capitalize()} está fazendo sucesso entre os clientes, ultrapassando até mesmo o lendário hambúrguer de siri.')

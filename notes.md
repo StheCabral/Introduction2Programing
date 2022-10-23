@@ -214,6 +214,30 @@ for chave, valor in dicionario.items()
 for chave in dicionarios.keys()
 ```
 
+# Aula 8 - Exceções
+Tratar os possíveis erros que podem acontecer dentro do código
+* Ao usar um `try` é necessário pelo menos um `except`
+* Podem ser usados n `excepts` para cada try
+* `else` e `finally` são opcionais
+* tem como criar suas próprias exceções
+```
+try:
+
+(código da atividade)
+
+except(tipo de erro):
+(código de tratamento)
+
+except:
+(outro código de tratamento)
+
+else:
+(código para ser executado caso não ocorra nenhuma falha)
+
+finally:
+(vai executar no final independentemente se ocorrerem erros)
+```
+[mais sobre isso aqui](https://www.youtube.com/watch?v=EohsuSgkTQM&t=88s)
 ***
 # Cheat sheet
 

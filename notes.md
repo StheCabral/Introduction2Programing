@@ -238,6 +238,27 @@ finally:
 (vai executar no final independentemente se ocorrerem erros)
 ```
 [mais sobre isso aqui](https://www.youtube.com/watch?v=EohsuSgkTQM&t=88s)
+
+# Aula 9 - Módulos e Pacotes
+* **Módulo**: é um arquivo .py que contém os conceitos principais do código (variáveis, classes constantes) e trata de um aspecto do programa. ex.: Módulo sobre a Biblioteca da Faculdade, Módulo sobre o Registro de Alunos
+* **Pacote**: diretório que contém vários módulos associados a alguma visão (preocupação) do sistema ex.: um pacote relacionado â interface, outro à lógica central do sistema e outro sobre o banco de dados
+* os pacotes utilizam uns aos outros através da importação 
+
+* Os nomes de varáveis, funções ou constantes são únicos de cada módulo, portanto não há problema de ter duas funções com nomes iguais se tiverem em módulos diferentes, nem se tiverem sendo importadas no mesmo lugar
+* Sintaxe para importação de funções:
+  `from pacote import módulo` e `nome_modulo.nome_importação`
+* Para importar todos os módulos: `from repositorio import *` mas é preciso incluir no arquivo __init__.py do repositório o seguinte `__all__ = [nomes dos módulos a serem importados quando *]`
+* criando um alias: `from repositorio import base_dados as bd` posso chamar esse módulo como 'bd' agora
+* Para diferenciar funções tbm é possível importar usando todo o path. ex.: `import interface.celular.interface_matricular`
+### Main
+É necessário ter um arquivo prinipal que chama os demais pacotes e módulos e tbm um lugar para que esse programa seja excutado com chamado. ex.:
+```
+def main():
+   (codigoo prinicial de excução do programa)
+   
+ if __name__ == '__main__':
+     main()
+```
 ***
 # Cheat sheet
 
